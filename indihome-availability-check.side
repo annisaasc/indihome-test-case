@@ -1,0 +1,269 @@
+{
+  "id": "5703fd6f-d528-4b17-ba04-8abfa3f998f6",
+  "version": "2.0",
+  "name": "indihome-availability-check",
+  "url": "https://myih.telkom.co.id/check-coverage",
+  "tests": [{
+    "id": "b059cfb7-488b-4e77-8392-fa5db8863a15",
+    "name": "indihome-availability-check",
+    "commands": [{
+      "id": "992d4332-126a-4c4b-a03f-73c7c758168a",
+      "comment": "",
+      "command": "open",
+      "target": "https://myih.telkom.co.id/check-coverage/map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20a3fea9-1945-47d4-96f8-eb4f172eedc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21fabecb-48bd-459f-9872-35cf645de2d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-search-control-input",
+      "targets": [
+        ["css=.leaflet-search-control-input", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d7900b9-803b-4bc0-a924-5ebda48d6879",
+      "comment": "",
+      "command": "type",
+      "target": "css=.leaflet-search-control-input",
+      "targets": [
+        ["css=.leaflet-search-control-input", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "cibitung"
+    }, {
+      "id": "ec7c06e8-52a7-4a0c-9345-e7b1ed10d11b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.leaflet-search-control-info-li:nth-child(2) > p",
+      "targets": [
+        ["css=.leaflet-search-control-info-li:nth-child(2) > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/div/div[2]/div[2]/div/div/div[2]/ul/li[2]/p", "xpath:idRelative"],
+        ["xpath=//li[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Cibitung, West Java, 41281, Indonesia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c39ca1ba-ce3f-4a58-86c3-af521bcee341",
+      "comment": "",
+      "command": "click",
+      "target": "css=.false",
+      "targets": [
+        ["css=.false", "css:finder"],
+        ["xpath=//a[contains(text(),'konfirmasi')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/form/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/check-coverage/map')])[13]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f343c7e0-7803-4d7a-a6ac-d826b6dc03fc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8386b29e-a076-462b-bc49-e6473ab996c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=province",
+      "targets": [
+        ["id=province", "id"],
+        ["css=#province", "css:finder"],
+        ["xpath=//select[@id='province']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e317d17-8fc1-4f6b-b62b-1a3e7e522927",
+      "comment": "",
+      "command": "select",
+      "target": "id=province",
+      "targets": [],
+      "value": "label=Jawa Barat"
+    }, {
+      "id": "89a02ef0-8bb7-4742-b7a7-138398f20984",
+      "comment": "",
+      "command": "click",
+      "target": "id=city",
+      "targets": [
+        ["id=city", "id"],
+        ["css=#city", "css:finder"],
+        ["xpath=//select[@id='city']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b928e9-b108-4af3-baca-1414ed7af1f4",
+      "comment": "",
+      "command": "select",
+      "target": "id=city",
+      "targets": [],
+      "value": "label=KABUPATEN BEKASI"
+    }, {
+      "id": "59f68398-40ba-4492-9512-879d8841fba7",
+      "comment": "",
+      "command": "click",
+      "target": "id=district",
+      "targets": [
+        ["id=district", "id"],
+        ["css=#district", "css:finder"],
+        ["xpath=//select[@id='district']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48ed5e43-1612-41f4-9a8e-6e9e6514489f",
+      "comment": "",
+      "command": "select",
+      "target": "id=district",
+      "targets": [],
+      "value": "label=Kecamatan CIBITUNG"
+    }, {
+      "id": "9802fa63-d811-4f25-9183-51fe11d5990c",
+      "comment": "",
+      "command": "click",
+      "target": "id=street",
+      "targets": [
+        ["id=street", "id"],
+        ["css=#street", "css:finder"],
+        ["xpath=//select[@id='street']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01303226-774a-4ba5-af69-3dd747db4c04",
+      "comment": "",
+      "command": "select",
+      "target": "id=street",
+      "targets": [],
+      "value": "label=CIBITUNG"
+    }, {
+      "id": "faa7efcb-086b-4c8f-a87b-093846f04857",
+      "comment": "",
+      "command": "click",
+      "target": "css=.box",
+      "targets": [
+        ["css=.box", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15d7f599-d22c-48ca-8342-e385979dee45",
+      "comment": "",
+      "command": "type",
+      "target": "id=coverageAddress",
+      "targets": [
+        ["id=coverageAddress", "id"],
+        ["css=#coverageAddress", "css:finder"],
+        ["xpath=//input[@id='coverageAddress']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "gramapuri tamansari c20/27"
+    }, {
+      "id": "c4a830a6-fd49-4d26-88a2-cdb237161a13",
+      "comment": "",
+      "command": "click",
+      "target": "id=coverageRtRw",
+      "targets": [
+        ["id=coverageRtRw", "id"],
+        ["css=#coverageRtRw", "css:finder"],
+        ["xpath=//input[@id='coverageRtRw']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13279216-6a69-42ab-8d4c-dd0b2df9c30f",
+      "comment": "",
+      "command": "type",
+      "target": "id=coverageRtRw",
+      "targets": [
+        ["id=coverageRtRw", "id"],
+        ["css=#coverageRtRw", "css:finder"],
+        ["xpath=//input[@id='coverageRtRw']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "006/033"
+    }, {
+      "id": "4b2757fb-7b17-4ea3-a257-da9bfdd025ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=coverageZipCode",
+      "targets": [
+        ["id=coverageZipCode", "id"],
+        ["css=#coverageZipCode", "css:finder"],
+        ["xpath=//input[@id='coverageZipCode']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c84596-0b0a-46df-bf10-d9144e12b9e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-placeholder:nth-child(6) > .btn",
+      "targets": [
+        ["css=.btn-placeholder:nth-child(6) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'lanjut')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section[2]/form/div[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/check-coverage')])[13]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fddea53d-cd86-4d2e-8492-73a5a2371054",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/section/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Maaf jaringan IndiHome belum tersedia di area Anda.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5fb8425-17dd-4a2e-aa77-564c743a7e4e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/section/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Maaf jaringan IndiHome belum tersedia di area Anda.')]", "xpath:innerText"]
+      ],
+      "value": "Maaf jaringan IndiHome belum tersedia di area Anda."
+    }]
+  }],
+  "suites": [{
+    "id": "ae547d9f-fc8d-4161-a6ad-fa3f8919aa4d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b059cfb7-488b-4e77-8392-fa5db8863a15"]
+  }],
+  "urls": [],
+  "plugins": []
+}

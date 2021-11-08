@@ -1,0 +1,94 @@
+{
+  "id": "42364118-ffde-4c13-a6ff-71ca7101ffa1",
+  "version": "2.0",
+  "name": "indihome-choose-internet-package",
+  "url": "https://myih.telkom.co.id/shop/internet/package",
+  "tests": [{
+    "id": "bb648b8d-36b5-4925-96fc-23cb9ae4eb38",
+    "name": "indihome-choose-internet-package",
+    "commands": [{
+      "id": "76eea60c-ba83-4a16-b134-eff5edf0f1af",
+      "comment": "",
+      "command": "open",
+      "target": "https://myih.telkom.co.id/shop/internet/package",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f903527-1875-470f-b71b-226b2a0f0ba2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1d4e60d-2175-48c8-8eee-af474ff47086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(4) .btn",
+      "targets": [
+        ["css=.col-lg-4:nth-child(4) .btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[4]/div/div/section/div/div[4]/a/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85bac977-1a69-41e8-9e73-dfcbfed0463f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.delayp4 .btn",
+      "targets": [
+        ["css=.delayp4 .btn", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c23c8743-cb2f-4657-b318-790477ae5561",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/header/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'LETAKKAN PIN SESUAI TUJUAN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d146b94-0198-4a76-9459-7b14bc535aac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/header/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'LETAKKAN PIN SESUAI TUJUAN')]", "xpath:innerText"]
+      ],
+      "value": "LETAKKAN PIN SESUAI TUJUAN"
+    }, {
+      "id": "b24e17dc-75d9-4f47-837e-904e8d41c555",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.false",
+      "targets": [
+        ["css=.false", "css:finder"],
+        ["xpath=//a[contains(text(),'konfirmasi')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/form/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/check-coverage/map')])[12]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "KONFIRMASI"
+    }]
+  }],
+  "suites": [{
+    "id": "c9250c52-bbc8-42e2-9ac8-24c8fd89b8ff",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bb648b8d-36b5-4925-96fc-23cb9ae4eb38"]
+  }],
+  "urls": [],
+  "plugins": []
+}

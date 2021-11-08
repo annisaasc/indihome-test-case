@@ -1,0 +1,94 @@
+{
+  "id": "8c462b56-3744-4ac4-b9fb-f6a51289af25",
+  "version": "2.0",
+  "name": "indihome-check-purchase",
+  "url": "https://myih.telkom.co.id",
+  "tests": [{
+    "id": "d96be24a-3e5a-4430-97b3-4f2725a65fca",
+    "name": "indihome-check-purchase",
+    "commands": [{
+      "id": "3af1c6dc-8ae0-4dc9-8ee7-602300bb4a00",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bf46e45-1fb7-4f4d-aef4-ae0e0bd731aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bdd21eb-6db8-49a7-bf3d-52a131718fc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-menu > .nav-item:nth-child(2) > .nav-link",
+      "targets": [
+        ["css=.nav-menu > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Riwayat')]", "xpath:link"],
+        ["xpath=//div[@id='basic-navbar-nav']/ul/div/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/history/bill')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24efc485-22ae-40cc-b044-550402e9336b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(2) > .list-group-item-content > .title",
+      "targets": [
+        ["css=.list-group-item:nth-child(2) > .list-group-item-content > .title", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/div/div/div/a[2]/div/p", "xpath:idRelative"],
+        ["xpath=//a[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Pembelian')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ab0a2ed-d97a-476b-858a-34282ffc38ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal",
+      "targets": [
+        ["css=.modal", "css:finder"],
+        ["xpath=//body/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0387d9-7a29-44fa-acd4-bd79d3dec76f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dark",
+      "targets": [
+        ["css=.dark", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/div[2]/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Anda belum memiliki riwayat transaksi. Segera langganan dan rasakan serunya seluruh layanan IndiHome')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f87f3db-1f27-4d61-b53d-8ea875fe4e0a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.dark",
+      "targets": [
+        ["css=.dark", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/div[2]/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Anda belum memiliki riwayat transaksi. Segera langganan dan rasakan serunya seluruh layanan IndiHome')]", "xpath:innerText"]
+      ],
+      "value": "Anda belum memiliki riwayat transaksi. Segera langganan dan rasakan serunya seluruh layanan IndiHome"
+    }]
+  }],
+  "suites": [{
+    "id": "1213d649-3a19-42c4-b44c-986e892b8b0b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d96be24a-3e5a-4430-97b3-4f2725a65fca"]
+  }],
+  "urls": ["https://myih.telkom.co.id/"],
+  "plugins": []
+}

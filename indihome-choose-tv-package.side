@@ -1,0 +1,131 @@
+{
+  "id": "72a4fd75-093f-43ed-a68f-5ddfecd99c8f",
+  "version": "2.0",
+  "name": "indihome-choose-tv-package",
+  "url": "https://myih.telkom.co.id",
+  "tests": [{
+    "id": "d1d26100-261c-4724-8696-a01999a3d732",
+    "name": "indihome-choose-tv-package",
+    "commands": [{
+      "id": "617aa994-73d5-41ff-97b8-e072b28a5a0c",
+      "comment": "",
+      "command": "open",
+      "target": "/shop",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0e2a6f8-4848-473c-ad91-9310d2d5ba36",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ce6e556-8ac5-4990-ab54-ad263eea0846",
+      "comment": "",
+      "command": "click",
+      "target": "css=.blue > h5",
+      "targets": [
+        ["css=.blue > h5", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/section/div/div/div[2]/a/h5", "xpath:idRelative"],
+        ["xpath=//div[2]/a/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'TV')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da190839-b010-45f4-b2d4-b2dcd5f72591",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "404c6f3a-2f6a-46a9-9f09-bbe79355417e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal",
+      "targets": [
+        ["css=.modal", "css:finder"],
+        ["xpath=//body/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a092820a-88c1-481f-a608-fff73628776d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Apps",
+      "targets": [
+        ["linkText=Apps", "linkText"],
+        ["css=.slick-slide:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Apps')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/div/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/shop/tv/apps')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apps')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "545daad9-376a-4417-ac76-93bbbecb1e6f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Apps",
+      "targets": [
+        ["linkText=Apps", "linkText"],
+        ["css=.slick-slide:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Apps')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/section/div/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/shop/tv/apps')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apps')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8435755-0709-40ef-b125-84fc48358474",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=LANGGANAN",
+      "targets": [
+        ["linkText=LANGGANAN", "linkText"],
+        ["css=.home-subscribe-watch:nth-child(3) .col-md-6 > .btn-placeholder > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'LANGGANAN')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shop/tv/apps/disney/details')])[2]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LANGGANAN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0abaf0a3-7582-4973-8052-9715e2e40b73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-3 > .subheading:nth-child(1) > p",
+      "targets": [
+        ["css=.mt-3 > .subheading:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/section[3]/div/p", "xpath:idRelative"],
+        ["xpath=//section[3]/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f6f1873-aa52-4d37-81fb-610680f51262",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.mt-3 > .subheading:nth-child(1) > p",
+      "targets": [
+        ["css=.mt-3 > .subheading:nth-child(1) > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/section/div/div/section[3]/div/p", "xpath:idRelative"],
+        ["xpath=//section[3]/div/p", "xpath:position"]
+      ],
+      "value": "TENTANG DISNEY+ HOTSTAR"
+    }]
+  }],
+  "suites": [{
+    "id": "d34f8a9c-9787-4ffe-80a9-133833ed9cd0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1d26100-261c-4724-8696-a01999a3d732"]
+  }],
+  "urls": ["https://myih.telkom.co.id/"],
+  "plugins": []
+}
